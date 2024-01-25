@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'rajdhani', sans-serif;
+    color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    padding: 0px 10px;
+    border-bottom: 1px solid white;
+}
+.nav-links{
+    padding-left: 20px;;
+}
+
+footer{
+    border-top: 1px solid white;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    background-color: black;
+    font-size: 8px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0px 8px;
+}
+
+.bio-title{
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 50px;
+
+}
+
+.headshot{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    grid-area: headshot;
+}
+
+.hero{
+    padding: 40px 20px;
+    background: linear-gradient(0deg, #545454, black 70%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headshot title"
+                         "bio bio"
+                         "sbiohead sbiohead"
+                         "sbio1 redhand"
+                         "shamrock sbio2"
+}
+.bio{
+    grid-area: bio;
+}
+.superhero-bio-img{
+    width: 200px;
+}
+.redhand-bio{
+    grid-area: redhand;
+}
+.shamrock-bio{
+    grid-area: shamrock;
+}
+.superhero-bio-1{
+    grid-area: sbio1;
+}
+.superhero-bio-2{
+    grid-area: sbio2;
+}
+.sbio-head{
+    grid-area: sbiohead;
+}
+/*print items*/
+.prints-container{
+    padding: 40px 20px;
+    background: linear-gradient(0deg, #545454, black 70%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title title title";
+}
+
+.prints-header{
+    grid-area: title;
+    margin: 0 auto;
+}
+.print-item-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    
+}
+.print-image{
+    width: 30vw;
+    grid-area: image;
+}
+.print-item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding-top: 15px;
+}
+.buy-btn{
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #545454;
+    color: whitesmoke;
+    border: none;
+    display: block;
+}
+.buy-btn:active{
+    color: red;
+}
+.print-item-title{
+    grid-area: title;
+    margin: 0;
+}
+.print-desc{
+    grid-area: desc;
+    margin: 0;
+}
+.print-foot{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*tshirt items*/
+
+.tshirt-container{
+    padding: 40px 20px;
+    background: linear-gradient(0deg, #545454, black 70%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title title title";
+}
+.tshirt-header{
+    grid-area: title;
+    margin: 0 auto;
+}
+.tshirt-item-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+}
